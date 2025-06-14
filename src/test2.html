@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+      @keyframes fadeUp {
+        from {
+          opacity: 0;
+          transform: translateY(40px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .fade-up {
+        animation: fadeUp 0.8s ease-out both;
+      }
+    </style>
+  </head>
+  <body class="h-[1000px] relative pt-[80px]">
+    <div>
+      <!-- Fixed Nav Wrapper -->
+      <div class="fixed top-0 left-0 w-full bg-[rgb(12,76,123)] z-30">
+        <nav
+          class="hidden lg:flex justify-between items-center px-10 py-4 text-white font-bold"
+        >
+          <img
+            class="w-[150px]"
+            src="../Logo_Variation-03__2_-removebg-preview-e1722510845776.png"
+            alt="Logo"
+          />
+          <div class="flex space-x-6 text-[20px] mr-[300px]">
+            <a href="#home">Home</a>
+            <a href="#About">About</a>
+            <a href="#Feature">Feature</a>
+            <a href="#service">Service</a>
+            <a href="#Contact">Contact Us</a>
+          </div>
+        </nav>
+        <!-- Mobile Nav -->
+        <div class="lg:hidden flex justify-between items-center px-10 py-4">
+          <img
+            class="w-[150px]"
+            src="../Logo_Variation-03__2_-removebg-preview-e1722510845776.png"
+            alt="Logo"
+          />
+          <img
+            id="nav-bar-button"
+            class="w-[50px] border border-white p-2"
+            src="../strip.png"
+            alt="Menu"
+          />
+        </div>
+      </div>
+
+      <!-- Overlay -->
+      <div
+        id="overlay"
+        class="fixed inset-0 bg-black bg-opacity-50 z-40 hidden transition-opacity duration-500 ease-in-out"
+      ></div>
+
+      <!-- Mobile Sidebar -->
+      <div
+        id="nav-bar"
+        class="fixed top-0 left-0 w-[80%] bg-white max-w-[350px] h-full z-50 transform -translate-x-full transition-transform duration-500 ease-in-out lg:hidden flex flex-col p-5 space-y-4 text-[20px] font-bold text-black"
+      >
+        <div class="flex justify-between items-center mb-6">
+          <img
+            class="w-[120px]"
+            src="../Logo-Variation-01-e1690870285326.png"
+            alt="Logo"
+          />
+          <img
+            id="nav-bar-close"
+            class="w-[40px]"
+            src="../circle.png"
+            alt="Close"
+          />
+        </div>
+        <a href="#home">Home</a>
+        <a href="#About">About</a>
+        <a href="#Feature">Feature</a>
+        <a href="#service">Service</a>
+        <a href="#Contact">Contact Us</a>
+      </div>
+
+      <!-- Home Section -->
+      <section id="home" class="bg-[rgb(12,76,123)] pt-10">
+        <div
+          class="flex flex-col md:flex-row lg:flex-row items-center justify-between px-10 gap-10"
+        >
+          <!-- Image Responsive Placement -->
+          <div
+            class="order-1 md:order-1 lg:order-2 mb-[40px] lg:mb-[100px] lg:mr-[200px]"
+          >
+            <img
+              class="fade-up w-[300px] sm:w-[400px] md:w-[500px] lg:w-[600px]"
+              src="../ridwan-cade--e1722849163526.png"
+              alt=""
+            />
+          </div>
+
+          <!-- Text Content -->
+          <div
+            class="order-2 md:order-2 lg:order-1 text-white w-full md:w-[600px] lg:w-[1000px]"
+          >
+            <h2
+              class="mb-4 font-[800] text-[40px] sm:text-[50px] md:text-[60px] lg:text-[60px] leading-tight"
+            >
+              Your Easy Bridge From Mobile Money
+              <span class="text-[rgb(34,197,94)]">to Digital Currency</span>
+            </h2>
+            <p class="font-bold text-[15px] sm:text-[16px] md:text-[17px] pb-6">
+              We prioritize your safety with advanced security measures and
+              encrypted transactions. Enjoy competitive rates and transparent
+              fees with no hidden costs. Our user-friendly design simplifies
+              financial transactions, and our flexible payment options.
+            </p>
+            <button
+              class="block w-full sm:w-full md:w-[600px] lg:w-[200px] lg:mt-[90px] bg-[rgb(97,206,112)] px-[30px] py-[20px] rounded text-[18px] font-bold text-center"
+            >
+              Exchange Now
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!--about section-->
+      <section id="About" class="bg-white mt-[60px]">
+        <div class="flex flex-col md:flex-row lg:flex-row items-center">
+          <div
+            class="text-[rgb(35,56,87)] ] ml-[80px] lg:w-[500px] w-full pr-[30px] lg:mr-0"
+          >
+            <h2 class="mb-[30px] font-[600] text-[50px]">
+              About <span class="text-[rgb(34,197,94)] font-[600]">Us</span>
+            </h2>
+            <p class="font-[640] mb-[100px] text-[20px] pb-6 leading-7">
+              <span class="font-[800]">Taran App</span> is a premier digital
+              money swap service designed to facilitate the secure and
+              effortless conversion of local e-money into digital money. Our
+              goal is to ensure that currency swaps are accessible, intuitive,
+              and transparent for all users. By prioritizing security, ease of
+              use, and clarity, we strive to deliver the finest experience for
+              both individuals and businesses in managing their currency
+              exchanges. Whether you’re a novice traveler or a seasoned
+              globetrotter, Taran App is committed to providing a dependable and
+              straightforward <br />
+              swapping experience.
+            </p>
+          </div>
+          <!-- Image Responsive Placement -->
+          <div class="mb-[40px] w-[500px] mt-[100px] mx-[120px]">
+            <img
+              class=" "
+              src="../smartmockups_ly00eb0d-e1719660705715-1231x1536.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </section>
+
+      <!--features section-->
+      <section id="features" class="bg-[rgb(236,248,237)] mt-[10px] lg:mt-[60px] md:mt-[60px] w-screen">
+        <div class="flex flex-col items-center justify-center">
+          <div
+            class="text-[rgb(35,56,87)] flex flex-col items-center justify-center mt-[120px]"
+          >
+            <h2 class="lg:mb-[20px] md:mb-[20px] mb-[70px] font-[700] lg:text-[30px] text-[20px] md:text-[30px] text-[rgb(34,197,94)]">
+              Awesome Features
+            </h2>
+            <p
+              class="font-[400] mb-[100px] text-[20px] max-w-[500px] pb-6 leading-7 mx-10 hidden lg:flex md:flex"
+            >
+              Enjoy instant transactions with minimal waiting time, ensuring you
+              have immediate access to your funds
+            </p>
+          </div>
+
+          <!-- Image Responsive Placement -->
+<div class="space-y-10">
+  <!-- Section 1: User-Friendly Interface -->
+  <div class="flex flex-col lg:flex-row items-start max-w-full">
+    <div>
+      <img class="w-[50px] md:w-[100px] lg:w-[100px]" src="../light-bulb.png" alt="" />
+    </div>
+    <div class="w-full lg:w-[500px] px-4 ml-2 lg:ml-6 flex flex-col justify-start">
+      <h2 class="mt-8 mb-2 font-bold text-[17px] md:text-[20px] lg:text-[30px] text-[rgb(34,197,94)]">
+        User-Friendly Interface
+      </h2>
+      <p class="font-semibold mb-10 lg:mb-[100px] text-[15px] md:text-[20px] text-[rgb(48,76,123)] leading-7">
+        Our platform is designed with simplicity in mind, ensuring that even first-time users can navigate and perform transactions with ease.
+      </p>
+    </div>
+  </div>
+
+  <!-- Section 2: Quick Registration -->
+  <div class="flex flex-col lg:flex-row items-start max-w-full">
+    <div>
+      <img class="w-[50px] md:w-[100px] lg:w-[100px]" src="../registration.png" alt="" />
+    </div>
+    <div class="w-full lg:w-[500px] px-4 ml-2 lg:ml-6 flex flex-col justify-start">
+      <h2 class="mt-8 mb-2 font-bold text-[17px] md:text-[20px] lg:text-[30px] text-[rgb(34,197,94)]">
+        Quick Registration
+      </h2>
+      <p class="font-semibold mb-10 lg:mb-[100px] text-[15px] md:text-[20px] text-[rgb(48,76,123)] leading-7">
+        Getting started with Taraan Business is a breeze. Our quick and simple registration process lets you create an account and start exchanging currencies in no time.
+      </p>
+    </div>
+  </div>
+
+  <!-- Section 3: Seamless Transactions -->
+  <div class="flex flex-col lg:flex-row items-start max-w-full">
+    <div>
+      <img class="w-[50px] md:w-[100px] lg:w-[100px]" src="../transaction.png" alt="" />
+    </div>
+    <div class="w-full lg:w-[500px] px-4 ml-2 lg:ml-6 flex flex-col justify-start">
+      <h2 class="mt-8 mb-2 font-bold text-[17px] md:text-[20px] lg:text-[30px] text-[rgb(34,197,94)]">
+        Seamless Transactions
+      </h2>
+      <p class="font-semibold mb-10 lg:mb-[100px] text-[15px] md:text-[20px] text-[rgb(48,76,123)] leading-7">
+        Perform transactions with just a few clicks. Our intuitive design makes it easy to convert your EVC to Premier Wallet or exchange other local currencies without any hassle.
+      </p>
+    </div>
+  </div>
+</div>
+          </div>
+
+
+
+
+
+
+          <!-- jjjjjjjjjjjjj 
+          <div class="flex items-start justify-center flex-col lg:flex-row md:flex-row">
+            <div>
+              <img class="lg:w-[130px] w-[70px]" src="../light-bulb.png" alt="" />
+            </div>
+            <div class="max-w-[400px] ml-6">
+              <h2
+                class="mb-[10px] font-[700] text-[20px] text-[rgb(34,197,94)]"
+              >
+                User-Friendly Interface
+              </h2>
+              <p
+                class="font-[700] mb-[100px] text-[20px] text-[rgb(48,76,123)] pb-6 leading-7"
+              >
+                Our platform is designed with simplicity in mind, ensuring that
+                even first-time users can navigate and perform transactions with
+                ease.
+              </p>
+            </div>
+          </div>
+          <div class="flex items-start justify-center flex-col lg:flex-row md:flex-row">
+            <div>
+              <img class="lg:w-[130px] w-[70px] " src="../light-bulb.png" alt="" />
+            </div>
+            <div class="max-w-[400px] ml-6">
+              <h2
+                class="mb-[10px] font-[700] text-[20px] text-[rgb(34,197,94)]"
+              >
+                User-Friendly Interface
+              </h2>
+              <p
+                class="font-[700] mb-[100px] text-[20px] text-[rgb(48,76,123)] pb-6 leading-7"
+              >
+                Our platform is designed with simplicity in mind, ensuring that
+                even first-time users can navigate and perform transactions with
+                ease.
+              </p>
+            </div>
+          </div>
+          </div>-->
+        </div>
+      </section>
+    </div>
+
+    <!-- JS -->
+    <script>
+      const openBtn = document.getElementById("nav-bar-button");
+      const closeBtn = document.getElementById("nav-bar-close");
+      const nav = document.getElementById("nav-bar");
+      const overlay = document.getElementById("overlay");
+
+      function openNav() {
+        nav.classList.remove("-translate-x-full");
+        overlay.classList.remove("hidden");
+      }
+
+      function closeNav() {
+        nav.classList.toggle("-translate-x-full");
+        overlay.classList.toggle("hidden");
+      }
+
+      openBtn.addEventListener("click", openNav);
+      closeBtn.addEventListener("click", closeNav);
+      overlay.addEventListener("click", closeNav);
+    </script>
+  </body>
+</html>
